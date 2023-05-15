@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="maincontainer">
+        <div class="loginform">
+            <div class="log-header">
+                <h1>Taskido</h1>
+            </div> 
+            <div class="sign-guest">
+                <label for="">Sign as a Guest</label>
+                <input type="text" id="user-name" placeholder="Hi what is your name?" required>
+                <div class="err-alert" id="err-alert">
+                    <small>You must entered your name.</small>
+                </div>
+                <div class="action-btn">
+                    <button type="button" onclick="Signin()">Sign in Guest</button>
+                </div>
+
+                <span class="label">
+                    <div class="br"></div>
+                    <small>Continue with</small>
+                    <div class="br"></div>
+                </span>
+
+                <div class="log-option">
+                    <span><ion-icon name="logo-google"></ion-icon></span>
+                    <span><ion-icon name="logo-facebook"></ion-icon></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="app.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

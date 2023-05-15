@@ -1,0 +1,146 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.maincontainer{
+    width: 100%;
+    height: 100vh;
+    background: #00304121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* loginform */
+.loginform{
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px 2px #00304121;
+    border:  1px solid #00304147;
+    position: relative;
+}
+
+.log-header{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 13px;
+    color: #003041cb;
+}
+
+.sign-guest{
+    width: 450px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.sign-guest label{
+    padding: 15px 0;
+    font-weight: 500;
+    font-size: 18px;
+    color: #003041;
+    text-align: center;
+}
+
+.sign-guest input{
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    border:  1px solid #003041cb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    font-size: 15px;
+    outline-color: #003041;
+}
+
+.action-btn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.action-btn button{
+    width: 120px;
+    height: 50px;
+    background: #003041;
+    color: #fff;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+}
+.action-btn button:hover{
+    background: #003041cb;
+    cursor: pointer;
+}
+
+.label{
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.label small{
+    width: 100%;
+    max-width: 0 10px;
+    text-align: center;
+}
+
+.br{
+    width: 100%;
+    height: 1px;
+    background:  #003041;
+}
+
+.log-option{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.log-option span{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 0 5px;
+}
+
+.log-option span:hover{
+    background: #f7f7f7;
+    cursor: pointer;
+    color: #003041;
+}
+
+.err-alert{
+    width: 100%;
+    margin-top: -15px;
+    text-align: left;
+    color: orangered;
+    font-size: 15px;
+    visibility: hidden;
+
+}
+.show-err{
+    visibility: visible;
+}
+
