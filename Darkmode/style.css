@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.body-light{
+    background: #f7f7f7;
+}
+
+.toggle{
+    width: 270px;
+    height: 100px;
+    background: #f7f7f7;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border:  2px solid #121212;
+}
+
+.darkmode{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: #121212;
+    border-radius: 100%;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 40px;
+    color: #f7f7f7;
+    transition: 0.3s;
+}
+
+
+/* adding slide effect to right */
+.toggle-darkmode{
+    left: 172px;
+}
+
+
+.hide-darkmode-icon{
+    display: none;
+}
+
+.lightmode-icon{
+    display: none;
+}
+
+.show-lightmode-icon{
+    display: flex;
+}

@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main-container{
+    padding: 50px;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background: #4caf4f38;
+    background-image: url("https://wallpaperaccess.com/full/1251533.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: static;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.container {
+	margin: auto;
+	max-width: 570px;
+	padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 40px;
+    color: #fff;
+
+}
+.inputcont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    margin-bottom: 20px;
+}
+.inputbx{
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.inputbx label{
+    width: 70px;
+    color: #fff;
+}
+.inputbx input{
+    width: 90px;
+    height: 35px;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 5px;
+	border: 1px solid #ccc;
+    outline-color: #4CAF50;
+    color: #000;
+}
+#date{
+    width: 135px;
+    cursor: pointer;
+}
+
+.inputbx button{
+    margin-left: 20px;
+    height: 35px;
+    width: 100px;
+    background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.inputbx button:hover{
+    background: #4caf4fde;
+    cursor: pointer;
+}
+
+
+table {
+	margin-top: 20px;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table td {
+	border: 1px solid #ccc;
+	padding: 10px;
+	text-align: center;
+    color: #fff;
+}
+table th{
+    color: #000;
+    padding: 10px;
+}
+
+table th {
+	background-color: #f5f5f5;
+	font-weight: bold;
+}
+
+.del-cont{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 230px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 15px 20px;
+
+}
+.del-cont label{
+    width: 100%;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+.del-cont button{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background: #4CAF50;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+}
+.del-cont button:hover{
+    background: #4caf4fde;
+    cursor: pointer;
+}
+
+
+/* Custom styles for checkboxes */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #4CAF50;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    color: white;
+}
+
+/* Style for "Select All" checkbox */
+#select-all-label {
+    color: #fff;
+
+}
+
+#select-all-checkbox:checked ~ #select-all-label::after {
+    content: "(all selected)";
+}
+
+
+
+
+/* cuition-cont */
+.cuition-cont{
+    width: 260px;
+    height: 70px;
+    background: #fff;
+    color: #4CAF50;
+    position: absolute;
+    /* top: 50px; */
+    top: 0;
+    left: 50%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+}
+
+.show-caution{
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+    transition: 0.2s;
+}
+
+
+
+

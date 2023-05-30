@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link style.css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- creeating the frist main-container -->
+    <div class="main-container">
+
+        <!-- main-content -->
+            <div class="main-content">
+                <!-- inputBox -->
+            <!-- Adding id for later use -->
+            <!-- Adding onInputfunction -->
+            <input id="textIput" type="text" placeholder="Type text here.." oninput="GenerateFont()">
+                
+            <div class="font-container">
+                <div class="font-holder">
+                    <li><label for="poppins" id="poppins">Poppins</label></li>
+                    <span onclick="downloadImage()"><ion-icon name ="download-outline"></ion-icon></span>
+                    <span onclick="previewImage();changeFont('Poppins');showPrev()"><ion-icon name ="image-outline"></ion-icon></span>
+                </div>
+                <div class="font-holder">
+                    <li><label for="Mrs Saint Delafield" id="mrs-saint-delafield">Mrs Saint Delafield</label></li>
+                    <span onclick="downloadImage()"><ion-icon name ="download-outline"></ion-icon></span>
+                    <span onclick="previewImage();changeFont('Mrs Saint Delafield');showPrev()"><ion-icon name ="image-outline"></ion-icon></span>
+                </div>
+                <div class="font-holder">
+                    <li><label for="Mr Dafoe" id="mr-dafoe">Mr Dafoe</label></li>
+                    <span onclick="downloadImage()"><ion-icon name ="download-outline"></ion-icon></span>
+                    <span onclick="previewImage();changeFont('Mr Dafoe');showPrev()"><ion-icon name ="image-outline"></ion-icon></span>
+                </div>
+                <div class="font-holder">
+                    <li><label for="Share Tech Mono" id="share-tech-mono">Share Tech Mono</label></li>
+                    <span onclick="downloadImage()"><ion-icon name ="download-outline"></ion-icon></span>
+                    <span onclick="previewImage();changeFont('Share Tech Mono');showPrev()"><ion-icon name ="image-outline"></ion-icon></span>
+                </div>
+                <div class="font-holder">
+                    <li><label for="Wallpoet" id="wallpoet">Wallpoet</label></li>
+                    <span onclick="downloadImage()"><ion-icon name ="download-outline"></ion-icon></span>
+                    <span onclick="previewImage();changeFont('Wallpoet');showPrev()"><ion-icon name ="image-outline"></ion-icon></span>
+                </div>
+                <div class="font-holder">
+                    <li><label for="Mrs Sheppards" id="mrs-sheppards">Mrs Sheppards</label></li>
+                    <span onclick="downloadImage()"><ion-icon name ="download-outline"></ion-icon></span>
+                    <span onclick="previewImage();changeFont('Mrs Sheppards');showPrev()"><ion-icon name ="image-outline"></ion-icon></span>
+                </div>
+
+                
+            </div>
+
+
+
+            <!-- preview image -->
+            <div class="preview-text-iamge" id="preview">
+                <div class="preview-card">
+                    <div class="prev-header">
+                        <span onclick="closePrreview()"><ion-icon name="close"></ion-icon></span>
+                    </div>
+                    <div class="prev-content" id="previewImage">
+                        <!-- where the image is going to be displayed -->
+                    </div>
+                    <span class="download-prev" onclick="downloadImage()">
+                        <ion-icon name="download-outline"></ion-icon>
+                        <small>Download Preview</small>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    
+</body>
+<!-- link the app.js -->
+<script src="app.js"></script>
+
+<!-- icon link -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

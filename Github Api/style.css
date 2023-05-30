@@ -1,0 +1,212 @@
+/* #profileContainer {
+    text-align: center;
+    margin-top: 20px;
+  } */
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+  }
+
+  .main-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-cont{
+    max-width: 600px;
+    min-width: 500px;
+    max-height: 400px;
+    height: 300px;
+    background: lightgrey;
+   /* From https://css.glass */
+   background: rgba(0, 0, 0, 0.2);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   display: flex;
+   justify-content: space-evenly;
+   padding: 20px;
+   overflow: hidden;
+
+    
+  }
+  .user-details{
+    width: 270px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+  }
+.user-profile{
+    width: 150px;
+    height:150px;
+    border-radius: 100%;
+    background: lightgray;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+
+.user-profile img{
+    width: 100%;
+}
+.user-name{
+    width: 270px;
+    height: auto;
+    color: #fff;
+    text-align: center;
+}
+.user-name h3{
+    font-size: 30px;
+    width: 100%;
+}
+.user-bio{
+    min-width: 270px;
+    height: auto !important;
+    padding: 0 20px;
+    border: 5px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: auto;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+}
+.user-bio p{
+    width: 100%;
+    height: auto;
+}
+.user-stat{
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-rep{
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+}
+
+.user-rep span{
+    margin-right: 20px;
+}
+
+
+
+  .input-box{
+    width: 500px;
+    height: 70px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .input-box input{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+  }
+  /* .input-box input::placeholder{
+    color: #fff;
+  } */
+
+  .input-box button{
+    width: 190px;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    margin-left: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  .input-box button:hover{
+    background: rgba(255, 255, 255, 0.20);
+    cursor: pointer;
+  }
+
+  .error{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    transition: 0.1s;
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+
+  .error-show{
+    opacity: 1;
+    transition: 0;
+    transform: scale(1);
+    display: flex;
+  }
+
+  .hide-deatils{
+    display: none;
+  }

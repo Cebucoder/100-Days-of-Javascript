@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+<!-- 
+    <input type="text" id="username" placeholder="Enter GitHub username">
+    <button onclick="getUserProfile()">Get Profile</button>
+    <div id="profileContainer"></div> -->
+
+
+    <div class="main-container">
+        <div class="back-overlay" >
+            <div class="card-cont" id="profileContainer">
+                <div class="user-profile"  id="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTA741CXTkRmohPiDPGJ3zj8oEhj1GFZ1zCw&usqp=CAU" alt="">
+                </div>
+
+                <div class="user-details" id="userdetails">
+                    <div class="user-name">
+                        <h3 id="user">Username</h3>
+                    </div>
+                    <div class="user-bio">
+                        <p id="bio">User Bio</p>
+                    </div>
+                    <div class="user-stat">
+                        <div class="user-rep">
+                            <span>
+                                <ion-icon name="git-branch-outline"></ion-icon>
+                            </span>
+                            <small id="repo">0</small>
+                        </div>
+                        <div class="user-rep">
+                            <span>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </span>
+                            <small id="star">0</small>
+                        </div>
+                    </div>
+
+                    <div class="error" id="err-text">
+                        <h1>Oops user is not available</h1>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+            
+            <div class="input-box">
+                <input id="username" type="text" placeholder="GitHub username">
+                <button onclick="getUserProfile()">Get Profile</button>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script src="app.js"></script> 
+</html>

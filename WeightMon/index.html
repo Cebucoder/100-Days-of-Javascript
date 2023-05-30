@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="container">
+            <h1>Weight Monitor</h1>
+            <div class="inputcont">
+                <div class="inputbx err" >
+                    <label for="">Date:</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="inputbx err">
+                    <label for="">Weight:</label>
+                    <input type="number" id="weight" step="0.1" min="0">
+                    <button  onclick="addWeight()">Add</button>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="select-all" onclick="selectAll()"></th>
+                        <label for="select-all-checkbox" id="select-all-label">Select All</label>
+                        <th>Date</th>
+                        <th>Weight</th>
+                    </tr>
+                </thead>
+                <tbody id="weight-list" class="weight-list">
+                </tbody>
+            </table>
+        </div>
+
+
+        <!-- delete entry -->
+        <div class="del-cont">
+            <label for="">Action</label>
+            <button onclick="deleteSelected()">Delete Selected</button>
+        </div>
+
+    </div>
+
+
+    <!-- alert when click the delete button but nothig selected -->
+
+    <div class="cuition-cont" id="cuition">
+        <label for="">Select at least one item to delete.</label>
+    </div>
+
+    <div class="cuition-cont" id="emptytext">
+        <label for="">Please fill in both date and weight.</label>
+    </div>
+
+
+	<script src="app.js"></script>
+    
+</body>
+</html>
