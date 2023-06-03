@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="showModal()">Create Post</button>
+
+    <!-- modal -->
+    <div class="modal-container" id="modal-container">
+        <div class="modal-card" id="modal-card">
+            <div class="modal-header">
+
+                <div class="modal-left-content">
+                    <div class="user-icon">
+                        <img src="user.png" alt="">
+                    </div>
+                    <div class="user-details">
+                        <label for="">Cebu Coder</label>
+                        <small>Web Developer</small>
+                    </div>
+                </div>
+
+                <div class="close-btn" onclick="closeModal()">
+                    <ion-icon name="close"></ion-icon>
+                </div>
+
+            </div>
+
+            <div class="modal-post">
+                <textarea placeholder="What is on your mind?"></textarea>
+            </div>
+
+            <div class="button-cont">
+                <button class="cancel" onclick="closeModal()">Cancel</button>
+                <button>Post</button>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script src="app.js"></script>
+</html>

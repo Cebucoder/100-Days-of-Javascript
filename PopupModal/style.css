@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background: rgb(73,96,243);
+    background: linear-gradient(0deg, rgba(73,96,243,1) 4%, rgba(97,136,243,1) 48%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 10px 0 #4976F3;
+    border: 1px solid #4976F3;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1) translateY(-5px);
+    background: #f7f7f7;
+}
+
+.modal-container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transition: 0.2s;
+}
+.show-modal-container{
+    visibility: visible;
+}
+
+.modal-card{
+    width: 500px;
+    height: 350px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    transform: scale(0);
+    transition: 0.2s;
+    opacity: 0;
+}
+.show-modal-card{
+    transition: 0.1s;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.modal-header{
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-left-content{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: 25px;
+    margin-bottom: 20px;
+}
+
+
+.user-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #4976f379;
+    overflow: hidden;
+}
+.user-icon img{
+    width: 100%;
+    height: auto;
+}
+
+.user-details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.user-details small{
+    color: #202020ee;
+    font-size: 12px;
+}
+.close-btn{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #202020;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.close-btn:hover{
+    transform: scale(1.1) rotate(45deg);
+}
+
+.modal-post{
+    width: 100%;
+    height: 150px;
+    padding: 0 25px;
+}
+.modal-post textarea{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    background: #f7f7f7;
+    resize: none;
+    outline-color: #4976F3;
+}
+
+.button-cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 25px;
+}
+.button-cont button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    color: #fff;
+    background: #6188F3;
+    box-shadow: none;
+    margin-left: 10px;
+    border: none;
+    transform: none;
+}
+.button-cont button:hover{
+    background: #4976F3;
+}
+
+.cancel{
+    background: #F082AC !important;
+}
+.cancel:hover{
+    background: #fa5f9b !important;
+}
+
