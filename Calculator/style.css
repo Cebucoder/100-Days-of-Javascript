@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:  url(./bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cal-cont{
+    width: 350px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.21);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border:  1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+
+.screen{
+    width: 100%;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.21);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border:  1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+.screen input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    outline-color: none;
+    text-align: right;
+    padding: 0 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.screen input::placeholder{
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.button-sec{
+    margin-top: 25px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-row{
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-row button{
+    width: 63px;
+    height: 63px;
+    background: rgba(255, 255, 255, 0.50);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border:  1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.button-row button:hover{
+    background: rgba(255, 255, 255, 0.60);
+
+}
+
+.button-row .clear{
+    width: 140px;
+}
+
+.button-row:last-child{
+    justify-content: flex-start;
+}
+
+.button-row .equal{
+    width: 140px;
+    margin-left: 15px;
+}
+
+.operator{
+    background: #fff !important;
+    color: #1c1c1c !important;
+}

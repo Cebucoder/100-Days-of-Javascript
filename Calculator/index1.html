@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cal-cont">
+        <div class="screen">
+            <input id="result" type="text" readonly placeholder="0">
+        </div>
+
+        <div class="button-sec">
+
+            <div class="button-row">
+                <button class="cal-button clear" onclick="clearResult()">C</button>
+                <button class="cal-button " onclick="deleteLastCharacter()">&larr;</button>
+                <button class="cal-button operator" onclick="appendResult('/')">&divide;</button>
+            </div>
+
+            <div class="button-row">
+                <button class="cal-button " onclick="appendResult('7')">7</button>
+                <button class="cal-button " onclick="appendResult('8')">8</button>
+                <button class="cal-button" onclick="appendResult('9')">9</button>
+                <button class="cal-button operator" onclick="appendResult('*')">&times;</button>
+            </div>
+
+            <div class="button-row">
+                <button class="cal-button " onclick="appendResult('4')">4</button>
+                <button class="cal-button " onclick="appendResult('5')">5</button>
+                <button class="cal-button" onclick="appendResult('6')">6</button>
+                <button class="cal-button operator" onclick="appendResult('-')">&minus;</button>
+            </div>
+
+            <div class="button-row">
+                <button class="cal-button " onclick="appendResult('3')">3</button>
+                <button class="cal-button " onclick="appendResult('2')">2</button>
+                <button class="cal-button" onclick="appendResult('1')">1</button>
+                <button class="cal-button operator" onclick="appendResult('+')">&plus;</button>
+            </div>
+
+            <div class="button-row">
+                <button class="cal-button" onclick="appendResult('0')">0</button>
+                <button class="cal-button equal operator" onclick="calculate()">&equals;</button>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+
+<script>
+
+function appendResult(value){
+    document.getElementById('result').value += value;
+}
+
+function clearResult(){
+    document.getElementById('result').value = '';
+}
+
+function deleteLastCharacter(){
+    var currentValue = document.getElementById('result').value;
+    document.getElementById('result').value = currentValue.slice(0, -1);
+}
+
+function calculate(){
+    var expression = document.getElementById('result').value;
+    var result = eval(expression);
+    document.getElementById('result').value = result.toLocaleString();
+}
+
+
+
+</script>
+
+</html>

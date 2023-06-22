@@ -51,7 +51,9 @@ function previewImage(){
 
     // Append the new image
     previewImage.appendChild(image);
+
 }
+
 
 
 // function to generate th etext into image

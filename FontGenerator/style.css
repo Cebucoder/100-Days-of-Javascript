@@ -8,12 +8,17 @@
     box-sizing: border-box;
     margin: 0;
 }
+body{
+    background: rgb(204,43,94);
+    background: linear-gradient(0deg, rgba(204,43,94,1) 2%, rgba(117,58,136,1) 100%);
+    min-height: 100vh;
+}
 .main-container{
     width: 100%;
     height: auto;
     max-height: 100%;
     padding: 50px;
-    background: #f7f7f7;
+    /* background: #f7f7f7; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,7 +154,7 @@ font-family: 'Wallpoet', cursive; */
     background: #fff;
     border-radius: 10px;
     padding: 20px;
-    border:  1px solid lightgray;
+    border:  1px solid #ca2b5d;
 }
 .prev-header{
     width: 100%;
@@ -159,7 +164,8 @@ font-family: 'Wallpoet', cursive; */
 .prev-header span{
     width: 50px;
     height: 50px;
-    background: #000;
+    /* background: #000; */
+    background: rgb(204,43,94);
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -186,13 +192,16 @@ font-family: 'Wallpoet', cursive; */
     display: flex;
     align-items: center;
     justify-content: center;
+    border:  1px solid #ca2b5d57;
 }
 
 .download-prev{
     width: 200px;
     padding: 0 20px;
     height: 50px;
-    background: #000;
+    /* background: #000; */
+    background: rgb(202, 43, 93);
+    background: linear-gradient(0deg, rgba(204,43,94,1) 2%, rgba(117,58,136,1) 100%);
     border-radius: 5px;
     color: #fff;
     display: flex;
@@ -208,6 +217,8 @@ font-family: 'Wallpoet', cursive; */
 
 .download-prev:hover{
     transform: translateY(-5px);
+    background: linear-gradient(180deg, rgba(204,43,94,1) 2%, rgba(117,58,136,1) 100%);
+
 }
 .download-prev small{
     padding-top: 3.5px;

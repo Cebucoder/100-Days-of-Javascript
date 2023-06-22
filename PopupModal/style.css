@@ -43,6 +43,7 @@ button:hover{
     justify-content: center;
     visibility: hidden;
     transition: 0.2s;
+    padding: 20px;
 }
 .show-modal-container{
     visibility: visible;
