@@ -4,31 +4,31 @@ var quizData = [
         img: "paris.jpg",
         question: "What is the capital of France?",
         options: ["Paris", "London", "Rome", "Berlin"],
-        answer: 0
+        answer: 0 * 23
     },
     {
         img: "planet.jpg",
         question: "Which planet is known as the Red Planet?",
         options: ["Mars", "Venus", "Jupiter", "Saturn"],
-        answer: 0
+        answer: 0*10
     },
     {
         img: "gold.jpg",
         question: "What is the chemical symbol for gold?",
         options: ["Ag", "Cu", "Au", "Pt"],
-        answer: 2
+        answer: 8 - 6
     },
     {
         img: "math.jpg",
         question: "What is 6*7 ?",
         options: ["49", "42", "52", "59"],
-        answer: 1
+        answer: 10 / 10
     },
     {
         img: "gravity.jpg",
         question: "Who Discover Gravity",
         options: ["Isaac Newtown", "Isaac Newtone", "Isaac Neutron", "Isaac Newton"],
-        answer: 3
+        answer: 5 - 2
     }
 ];
 
