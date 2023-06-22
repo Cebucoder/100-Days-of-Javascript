@@ -4,42 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="icon" type="icon/png"  href="icon1.png">
+    <title>Quiz | App</title>
 </head>
 <body>
 
-    <!-- <div id="quiz-container">
-        <h1>Quiz App</h1>
-        <div id="question"></div>
-        <div id="options"></div>
-        <button id="submit-btn">Submit</button>
-        <div id="feedback"></div>
-        <div id="result"></div>
-    </div> -->
-
     <div class="main-container">
-        <div class="quiz-background">
-            <img id="background" src="" alt="">
+
+        <div class="quiz-count">
+            <span>
+                <small id="start-quiz">0</small>
+                <small>/</small>
+                <small id="total-quiz">0</small>
+            </span>
         </div>
-       <div class="quiz-container">
-        <div class="question-container">
-            <h1 id="question"></h1>
+
+        <div class="overlay-image">
+            <img id="overlay-image" src="paris.jpg" alt="">
         </div>
-        <div class="choices-container">
-            <div class="choices">
-                <span>A</span>
-                <h3 id="options"></h3>
+
+        <div class="quiz-container">
+            <div class="question-cont">
+                <h1 id="question">Question here</h1>
+                <!-- <div class="question-label" id="comp">
+                    Question
+                </div> -->
             </div>
 
-            <!-- <div id="options"></div> -->
-            <button id="submit-btn">Submit</button>
-           
-            
+            <div class="choices-label" id="choices-label">Choices</div>
+            <div class="choices-cont" id="options"></div>
+
+            <div class="result-cont">
+                <button id="submit-btn">Submit</button>
+
+                <div class="correct" id="correct">
+                    <label for="" id="result"></label>
+                </div>
+                <div class="wrong" id="wrong">
+                    <label for="" id="feedback"></label>
+                </div>
+            </div>
+
+
+            <!-- score result -->
+
+            <div class="scoring-board" id="scoring-board">
+                
+                <div class="score-holder">
+                    <div class="score-count">
+                        <small>Correct Answer</small>
+                        <span id="correct-count">0</span>
+                    </div>
+                    <div class="score-count">
+                        <small>Wrong Answer</small>
+                        <span id="wrong-count">0</span>
+                    </div>
+                </div>
+
+                <div class="topic">Choose topic</div>
+
+                <div class="choose-quiz">
+                    <span>Math</span>
+                    <span>English</span>
+                    <span>Science</span>
+                    <span>IQ Test</span>
+                    <span>Programming</span>
+                    <span>Comming soon!</span>
+                </div>
+            </div>
+
         </div>
-       </div>
     </div>
-
-
+    
 </body>
 <script src="app.js"></script>
 </html>
