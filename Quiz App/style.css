@@ -8,9 +8,6 @@
 
 }
 
-body {
-   
-}
 .main-container{
     width: 100%;
     min-height: 100vh;
@@ -291,6 +288,8 @@ body {
     font-size: 20px;
 }
 
+
+
 @media (max-width:710px){
     .choices-cont button{
         width: 100%;
@@ -304,7 +303,7 @@ body {
     }
 }
 
-@media (max-width:400px){
+@media (max-width:717px){
     .choices-label::after, .choices-label::before{
         display: none;
     }

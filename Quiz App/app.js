@@ -28,7 +28,7 @@ var quizData = [
         img: "gravity.jpg",
         question: "Who Discover Gravity",
         options: ["Isaac Newtown", "Isaac Newtone", "Isaac Neutron", "Isaac Newton"],
-        answer: 5 - 2
+        answer: (((6 + 4) * 2) - 8) / 4
     }
 ];
 
@@ -63,7 +63,8 @@ function displayQuestion() {
     optionsElement.innerHTML = '';
     for (var i = 0; i < currentQuizData.options.length; i++) {
         var option = document.createElement('button');
-        option.textContent = currentQuizData.options[i];
+        // option.textContent = currentQuizData.options[i];
+        option.textContent = String.fromCharCode(65 + i) + ". " + " " +  currentQuizData.options[i];
         option.setAttribute('data-index', i);
         option.addEventListener('click', checkAnswer);
         optionsElement.appendChild(option);
@@ -117,14 +118,7 @@ function showResult() {
     scoring.classList.add('show-scoring-board');
     document.getElementById('correct-count').innerHTML = correctAnswers;
     document.getElementById('wrong-count').innerHTML = wrongAnswers;
-
-    var overlayImage = document.getElementById('overlay-image');
-    overlayImage.classList.add('show-confiti');
-
-
-    
-
-
+    document.getElementById('quiztracker').style.display = 'none'; 
     document.getElementById('question').innerHTML = 'Quiz Complete';
     document.getElementById('choices-label').style.display = 'none';
     optionsElement.innerHTML = '';
