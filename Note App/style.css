@@ -1,0 +1,322 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+/* 
+#FF7EB9
+#FEFF9C
+#7AFCFF
+#FFF640
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+
+ .main-container{
+    width: 100%;
+    min-height: 100vh;
+    background: url(./bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px  70px;
+ }
+
+ .addbtn{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    color: #2B1E14;
+    z-index: 1;
+ }
+.heading-title{
+    width: 160px;
+    height: 50px;
+    background: #2B1E14;
+    border-radius:  0 50px 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    font-size: 18px;
+    box-shadow: 1px 2px 10px -3px #fff;
+    z-index: 1;
+    
+}
+
+.overlay-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 30, 20, 0.61);
+    box-shadow:  0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+/* to show the overlay container */
+.show-overlay{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.note-container{
+    width: 100%;
+    height: 300px;
+    min-width: 400px;
+    background: #fff;
+    box-shadow: 1px 1px 10px -5px #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    padding: 16px;
+    
+}
+
+.note-container span{
+    width: 100%;
+    height: 50px;
+    background: #2B1E14;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.note-container input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    outline-color: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+} 
+
+.note-container textarea{
+    width: 100%;
+    height: 150px;
+    border: none;
+    outline: none;
+    outline-color: none;
+    margin-top: 50px;
+    padding: 20px 0;
+    font-size: 16px;
+    color: #2B1E14;
+    resize: none;
+}
+
+.note-container textarea::-webkit-scrollbar{
+    width: 5px;
+}
+.note-container textarea::-webkit-scrollbar-thumb{
+    background: #2B1E14;
+    border-radius: 50px;
+}
+.note-container textarea::-webkit-scrollbar-track{
+    background: #2b1e1446;
+    border-radius: 50px;
+}
+
+.note-container button{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    color: #fff;
+    background: #2B1E14;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.note-container button:hover{
+    background: #2b1e14d7;
+}
+
+.Note-List{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.Note-List ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.Note-List li{
+    width: 214px;
+    height: 214px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.note-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.note-item .delete-btn{
+    cursor: pointer;
+    background: #2b1e1446;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transform: rotate(-45deg);
+}
+.note-item .delete-btn:hover{
+    background: #fff;
+}
+
+.note-item .note-text{
+    font-size: 13px;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
+.note-title-id{
+    height: 35px;
+    margin-bottom: 10px;
+    color: #2B1E14;  /*the color will change after the js code*/
+    font-weight: bold;
+}
+
+.note-item textarea{
+    border: none;
+    outline:none;
+    outline-color: none;
+    background: none;
+    resize: none;
+}
+
+.note-item textarea::-webkit-scrollbar{
+    width: 5px;
+}
+.note-item textarea::-webkit-scrollbar-thumb{
+    background: #2B1E14;
+    border-radius: 50px;
+}
+.note-item textarea::-webkit-scrollbar-track{
+    background: #2b1e1446;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width:600px){
+    .main-container{
+        padding: 55px 17px;
+    }
+    .overlay-container{
+        padding: 15px;
+    }
+    .note-container{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+    }
+  }
+
+  @media (max-width:400px){
+    .Note-List li{
+        width: 150px;
+        height: 150px;
+    }
+  }

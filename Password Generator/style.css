@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}   
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(43,106,204);
+    background: linear-gradient(0deg, rgba(43,106,204,1) 0%, rgba(73,101,255,1) 100%);
+}
+
+.custom-shape-divider-top-1687573976 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1687573976 svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 67px;
+}
+
+.custom-shape-divider-top-1687573976 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* .main-cont */
+.main-cont{
+    width: 350px;
+    height: 500px;
+    background: #002;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+}
+
+.main-cont h1{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+}
+
+.main-cont .input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline-color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow:  0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.main-cont .input::placeholder{
+    color: #fff;
+}
+
+.length{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.length label{
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.length span{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.length span input{
+    width: 100%;
+}
+
+.length small{
+    width: 30px;
+    text-align: center;
+}
+
+
+/* adding ranmge sttyle */
+input[type="range"]{
+    width: 200px;
+    background: rgb(43,106,204);
+    background: linear-gradient(90deg, rgba(43,106,204,1) 25%, rgba(112,75,255,1) 100%);
+    height: 6px;
+    border-radius: 4px;
+    outline: none;
+    -webkit-apperance: none;
+    appearance: none;
+}
+
+/* adding stytle for range circle */
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #002;
+    cursor: pointer;
+    box-shadow: 0 0 10px 3px #002;
+}
+
+
+
+/* option */
+.option{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.option span{
+    width: 100%;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.toggle{
+    width: 36px;
+    height: 20px;
+    border-radius: 50px;
+    position: relative;
+    background: rgba(25, 25, 55, 0.87);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border:  1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.circ{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 1.1px;
+    left: 1.5px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+/* creating animation for toggle */
+.toggle-num, .toggle-lett, .toggle-char{
+    left: 17px;
+}
+
+/* adding backgroud after toggle */
+.toggle-back-num, .toggle-back-lett, .toggle-back-char{
+    background: rgb(43,106,204);
+    background: linear-gradient(0deg, rgba(43,106,204,1) 0%, rgba(73,101,255,1) 100%);
+}
+
+.option span label{
+    font-size: 13px;
+}
+
+.main-cont button{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(43,106,204);
+    background: linear-gradient(90deg, rgba(43,106,204,1) 25%, rgba(112,75,255,1) 100%);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.main-cont button:hover{
+    background: linear-gradient(-90deg, rgba(43,106,204,1) 25%, rgba(112,75,255,1) 100%);
+}

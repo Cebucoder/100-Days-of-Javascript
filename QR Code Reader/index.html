@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>QR Code Reader</title>
+</head>
+<body>
+
+
+
+<div class="reader-container">
+
+
+    <!-- adding refresh button to clear the prevous upload -->
+    <div id="refresh" class="refresh" onclick="refresh()">
+        <ion-icon name="refresh-outline"></ion-icon>
+    </div>
+
+
+    <h1>QR Code Reader</h1>
+    <div class="image-container">
+        <!-- display the image qr code -->
+        <img src="" alt="" id="result-image">
+
+        <!-- qr code border -->
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+
+
+        <!-- loading animation -->
+        <div class="loading-animation" id="loading">
+            <img src="loading.gif" alt="">
+        </div>
+
+    </div>
+
+    <!-- display the link after uploading the qr image -->
+    <a id="qr-link" href="" target="_blank"></a>
+
+
+    <!-- button toopen file to start upload -->
+    <div class="upload-btn" id="hide-Upload-btn">
+        <input type="file" id="image-input" accept="image/*">
+        <label for="image-input" id="file-label">
+            <ion-icon name="cloud-upload-outline"></ion-icon>
+            Upload Image
+        </label>
+    </div>
+
+</div>
+
+
+
+<!-- ========================================================= -->
+
+  <script src="app.js"></script>
+
+  <!-- link for the qr code reader api -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script> -->
+
+    <script src="jsqrs.js"></script>
+
+  <!-- link for ion-icon -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

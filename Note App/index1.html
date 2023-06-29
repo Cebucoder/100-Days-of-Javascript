@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Sorting Program</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        table {
+            width: 300px;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grade Sorting Program</h1>
+
+    <form id="gradeForm">
+        <label for="numberOfStudents">Number of students:</label>
+        <input type="number" id="numberOfStudents" name="numberOfStudents" required>
+
+        <div id="gradeInputs"></div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <table id="resultsTable"></table>
+
+    <script>
+        document.getElementById('gradeForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var numberOfStudents = parseInt(document.getElementById('numberOfStudents').value);
+            var gradeInputs = document.getElementById('gradeInputs');
+            var resultsTable = document.getElementById('resultsTable');
+
+            // Clear previous inputs and results
+            gradeInputs.innerHTML = '';
+            resultsTable.innerHTML = '';
+
+            // Generate grade inputs for each student
+            for (var i = 0; i < numberOfStudents; i++) {
+                var studentLabel = document.createElement('label');
+                studentLabel.textContent = 'Student ' + (i + 1) + ' Grades:';
+
+                var englishInput = document.createElement('input');
+                englishInput.type = 'number';
+                englishInput.name = 'englishGrades';
+                englishInput.required = true;
+                englishInput.placeholder = 'English';
+
+                var mathInput = document.createElement('input');
+                mathInput.type = 'number';
+                mathInput.name = 'mathGrades';
+                mathInput.required = true;
+                mathInput.placeholder = 'Math';
+
+                var scienceInput = document.createElement('input');
+                scienceInput.type = 'number';
+                scienceInput.name = 'scienceGrades';
+                scienceInput.required = true;
+                scienceInput.placeholder = 'Science';
+
+                var filipinoInput = document.createElement('input');
+                filipinoInput.type = 'number';
+                filipinoInput.name = 'filipinoGrades';
+                filipinoInput.required = true;
+                filipinoInput.placeholder = 'Filipino';
+
+                var mapehInput = document.createElement('input');
+                mapehInput.type = 'number';
+                mapehInput.name = 'mapehGrades';
+                mapehInput.required = true;
+                mapehInput.placeholder = 'MAPEH';
+
+                gradeInputs.appendChild(studentLabel);
+                gradeInputs.appendChild(englishInput);
+                gradeInputs.appendChild(mathInput);
+                gradeInputs.appendChild(scienceInput);
+                gradeInputs.appendChild(filipinoInput);
+                gradeInputs.appendChild(mapehInput);
+            }
+
+            var submitButton = document.createElement('input');
+            submitButton.type = 'submit';
+            submitButton.value = 'Submit';
+
+            var form = document.getElementById('gradeForm');
+            form.appendChild(submitButton);
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                var gradeForm = new FormData(form);
+
+                // Display the results for each student
+                var tableHeader = document.createElement('tr');
+                var header1 = document.createElement('th');
+                header1.textContent = 'Student';
+                var header2 = document.createElement('th');
+                header2.textContent = 'Result';
+
+                tableHeader.appendChild(header1);
+                tableHeader.appendChild(header2);
+                resultsTable.appendChild(tableHeader);
+
+                for (var i = 0; i < numberOfStudents; i++) {
+                    var englishGrade = parseInt(gradeForm.get('englishGrades'));
+                    var mathGrade = parseInt(gradeForm.get('mathGrades'));
+                    var scienceGrade = parseInt(gradeForm.get('scienceGrades'));
+                    var filipinoGrade = parseInt(gradeForm.get('filipinoGrades'));
+                    var mapehGrade = parseInt(gradeForm.get('mapehGrades'));
+
+                    var result = 'Failed';
+                    if (englishGrade >= 75 && mathGrade >= 75 && scienceGrade >= 75 && filipinoGrade >= 75 && mapehGrade >= 75) {
+                        result = 'Passed';
+                    }
+
+                    var row = document.createElement('tr');
+                    var cell1 = document.createElement('td');
+                    cell1.textContent = 'Student ' + (i + 1);
+                    var cell2 = document.createElement('td');
+                    cell2.textContent = result;
+
+                    row.appendChild(cell1);
+                    row.appendChild(cell2);
+                    resultsTable.appendChild(row);
+                }
+
+                form.removeChild(submitButton);
+            });
+        });
+    </script>
+</body>
+</html>

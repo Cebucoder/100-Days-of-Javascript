@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}   
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #04243C;
+}
+
+.container {
+    width: 380px;
+    height: 500px;
+    background: #f7f7f7;
+    border: 1px solid #003;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 10px 20px -10px rgba(184, 184, 184, 1);
+  }
+  
+  input[type="text"] {
+    width: 200px;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 8px 20px;
+  }
+  
+  .weatherBackground {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .weatherBackground img{
+    width: 100%;
+    height: auto;
+  }
+
+  .weatherInfo{
+    width: 100%;
+    height: 190px;
+   background: #fff;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  /* =========== */
+  .custom-shape-divider-bottom-1688028932 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+
+.custom-shape-divider-bottom-1688028932 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.custom-shape-divider-bottom-1688028932 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+
+.second {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.second svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1688029077 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.input-box{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+    display: flex;
+
+}
+.input-box input{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    outline-color: #DD672D;
+    background: rgba(255, 255, 255, 0.58);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 51, 0.3);
+    padding: 0 20px;
+    color: #04243C;
+}
+.input-box input::placeholder{
+    color: #04243C;
+    font-size: 16px;
+}
+.input-box input:hover{
+    border: 1px solid #DD672D;
+}
+
+.input-box button{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: 15px;
+    background: rgba(255, 255, 255, 0.58);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 51, 0.3);
+    color: #04243C;
+    cursor: pointer;
+    outline: inherit;
+    outline-color: #DD672D;
+}
+.input-box button:hover{
+    color: #DD672D;
+    border: 1px solid #DD672D;
+}
+
+.result{
+    width: 100%;
+    height: 190px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10px;
+    text-transform: uppercase;
+    color: #DD672D;
+
+    /* #727272 */
+
+}
+.location{
+    text-align: center;
+    padding-top: 10px;
+}
+.location h2{
+    font-size: 16px;
+}
+.status{
+    width: 100%;
+    position: relative;
+}
+.temp{
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    font-size: 65px;
+    font-weight: 500;
+    text-align: left;
+}
+.temp small{
+    font-size: 13px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.hum-wind{
+    position: absolute;
+    width: 110px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 15px;
+    right: 10px;
+    font-size: 20px;
+}
+.hum-wind span{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.hum-wind span svg{
+    fill: #DD672D;
+}
+
+.hum-wind .label{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 500px){
+   .container{
+    width: 100%;
+    transform: scale(0.9);
+   }
+   .temp{
+    transform: scale(0.7);
+    left: 0px;
+   }
+}
+
+
+
+
+  

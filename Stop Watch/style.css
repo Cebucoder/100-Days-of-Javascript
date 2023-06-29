@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&family=Poppins:wght@400;500&display=swap');
+
+/* 
+font-family: 'Orbitron', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.min-cont{
+    width: 100%;
+    min-height: 100vh;
+    background: #002;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding: 15px;
+}
+
+.stopwatch{
+    width: 270px;
+    height: 270px;
+    background: transparent;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    font-family: 'Orbitron',sans-serif;
+    font-size: 24px;
+}
+
+.stopwatch span{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    margin: 20px 0;
+    display: flex;
+}
+
+.btn button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 7px;
+    color: #002;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button:hover{
+    background: rgba(225, 225, 225, 0.3);
+    color: #fff;
+}
+

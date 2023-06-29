@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="addbtn" onclick="addBtn()">
+            &plus;
+        </div>
+
+        <div class="heading-title">
+            <label for="">My Notes</label>
+        </div>
+
+
+        <div class="overlay-container" id="note-container">
+            <form action="" id="note-form">
+                <div class="note-container">
+                    <span class="title">
+                        <input type="text" id="note-title" type="text" placeholder="My Note" value="My Note">
+                    </span>
+                    <textarea id="note-input" placeholder="Enter your note..."></textarea>
+                    <button type="submit">Add Note</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- container where the notes will display -->
+        <div class="Note-List">
+            <ul id="note-list">
+                <!-- Notes here -->
+                <!-- <li class="note-item">
+                    <span class="note-title-id" id="note-title">My Notes</span>
+                    <textarea readonly class="note-text"></textarea>
+                    <span class="delete-btn" onclick="deleteNote()">&plus;</span>
+                </li> -->
+            </ul>
+        </div>
+
+
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>
