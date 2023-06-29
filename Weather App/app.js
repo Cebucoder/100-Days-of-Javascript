@@ -27,14 +27,14 @@ fetch(apiUrl)
     // Map weather icon codes to custom image URLs or paths
     var weatherImage;
     if (weatherIcon === '01d') {
-        weatherImage = './background/clear.png';
+        weatherImage = '/background/clear.png';
         document.getElementById('location').style.color = '#DD672D';
         document.getElementById('status').style.color = '#DD672D';
         document.getElementById('hum-icon').style.fill = '#DD672D';
         document.getElementById('wind-icon').style.fill = '#DD672D';
         document.getElementById('weather-label').textContent = 'Clear-sky';
     }else if(weatherIcon === '02d'){
-        weatherImage = './background/cloud.png';
+        weatherImage = '/background/cloud.png';
         document.getElementById('location').style.color = '#727272';
         document.getElementById('status').style.color = '#727272';
         document.getElementById('hum-icon').style.fill = '#727272';
@@ -42,42 +42,42 @@ fetch(apiUrl)
         document.getElementById('weather-label').textContent = 'Few-clouds';
 
     }else if(weatherIcon === '03d'){
-        weatherImage = './background/cloud.png';
+        weatherImage = '/background/cloud.png';
         document.getElementById('location').style.color = '#727272';
         document.getElementById('status').style.color = '#727272';
         document.getElementById('hum-icon').style.fill = '#727272';
         document.getElementById('wind-icon').style.fill = '#727272';
         document.getElementById('weather-label').textContent = 'Scattered-clouds';
     }else if(weatherIcon === '04d'){
-        weatherImage = './background/cloud.png';
+        weatherImage = '/background/cloud.png';
         document.getElementById('location').style.color = '#727272';
         document.getElementById('status').style.color = '#727272';
         document.getElementById('hum-icon').style.fill = '#727272';
         document.getElementById('wind-icon').style.fill = '#727272';
         document.getElementById('weather-label').textContent = 'Broken-clouds';
     }else if(weatherIcon === '09d'){
-        weatherImage = './background/rain.png';
+        weatherImage = '/background/rain.png';
         document.getElementById('location').style.color = '#727272';
         document.getElementById('status').style.color = '#727272';
         document.getElementById('hum-icon').style.fill = '#727272';
         document.getElementById('wind-icon').style.fill = '#727272';
         document.getElementById('weather-label').textContent = 'Shower-rain';
     }else if(weatherIcon === '10d'){
-        weatherImage = './background/rain.png';
+        weatherImage = '/background/rain.png';
         document.getElementById('location').style.color = '#727272';
         document.getElementById('status').style.color = '#727272';
         document.getElementById('hum-icon').style.fill = '#727272';
         document.getElementById('wind-icon').style.fill = '#727272';
         document.getElementById('weather-label').textContent = 'Rain';
     }else if(weatherIcon === '11d'){
-        weatherImage = './background/thunder.png';
+        weatherImage = '/background/thunder.png';
         document.getElementById('location').style.color = '#727272';
         document.getElementById('status').style.color = '#727272';
         document.getElementById('hum-icon').style.fill = '#727272';
         document.getElementById('wind-icon').style.fill = '#727272';
         document.getElementById('weather-label').textContent = 'Thuderstorm';
     }else if(weatherIcon === '13d'){
-        weatherImage = './background/rain.png';
+        weatherImage = '/background/rain.png';
         document.getElementById('location').style.color = '#727272';
         document.getElementById('status').style.color = '#727272';
         document.getElementById('hum-icon').style.fill = '#727272';
@@ -85,7 +85,7 @@ fetch(apiUrl)
         document.getElementById('weather-label').textContent = 'Snow';
 
     }else if(weatherIcon === '50d'){
-        weatherImage = './background/mist.png';
+        weatherImage = '/background/mist.png';
         document.getElementById('location').style.color = '#727272';
         document.getElementById('status').style.color = '#727272';
         document.getElementById('hum-icon').style.fill = '#727272';
@@ -94,7 +94,7 @@ fetch(apiUrl)
 
     }
      else {
-        weatherImage = './background/clear.png';
+        weatherImage = '/background/clear.png';
         document.getElementById('location').style.color = '#DD672D';
         document.getElementById('status').style.color = '#DD672D';
         document.getElementById('hum-icon').style.fill = '#DD672D';
