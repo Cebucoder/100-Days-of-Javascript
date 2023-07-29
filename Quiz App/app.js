@@ -49,7 +49,7 @@ var resultElement = document.getElementById('result');
 
 
 var totalQuestions = quizData.length;
-document.getElementById('total-quiz').innerHTML = totalQuestions;
+// document.getElementById('total-quiz').textContent = totalQuestions;
 
 
 
